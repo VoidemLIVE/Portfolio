@@ -1,6 +1,6 @@
 # My portfolio website
 
-![Home](https://i.imgur.com/6l2TeGx.png)
+![Home](https://i.imgur.com/kl89V6X.png)
 
 This website is designed to look like a command line/terminal (if you couldn't tell)
 
