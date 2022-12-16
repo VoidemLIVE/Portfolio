@@ -47,7 +47,7 @@ __      __   _     _                _      _______      ________
   \ \/ / _ \| |/ _` |/ _ \ '_ ` _ \| |      | |   \ \/ / |  __|  
    \  / (_) | | (_| |  __/ | | | | | |____ _| |_   \  /  | |____ 
     \/ \___/|_|\__,_|\___|_| |_| |_|______|_____|   \/   |______|
-                                                          [[b;blue; black]v.1.4.2]
+                                                          [[b;blue; black]v.1.5.0]
 Copyright (c) 2022 VoidemLIVE. Voidem [ https://dev.voidemnet.com ]
 Type "help" for a list of commands
     </template>
@@ -117,6 +117,7 @@ NEOFETCH        Displays information about the operating system.
 PROJECTS        Displays the projects i have worked/currently work on.
 SOURCE          Displays the github link to the source code of this website.
 COPYRIGHT       Displays the copyright information of this website.
+SOCIALS         Displays my social media link.
     </template>
     <template id="projects">
                           [[bu;blue; black]Minecraft Plugins]
@@ -173,6 +174,13 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.]
     </template>
+    <template id="socials">
+[[b;cyan; black]Twitter:] https://twitter.com/voidemlive
+[[b;cyan; black]Github:] https://github.com/voidemlive
+[[b;cyan; black]Youtube:] https://youtube.com/voidemlive
+[[b;cyan; black]Tumblr:] https://voidemlive.tumblr.com
+[[b;cyan; black]Discord:] [[;#5171fb; black]Voidem#2269]
+    </template>
     <script>
         $('body').terminal({
             neofetch: function () {
@@ -219,6 +227,11 @@ SOFTWARE.]
                 const license = document.getElementsByTagName("template")[5]
                 const license1 = license.content.textContent
                 this.echo(license1)
+            },
+            socials: function ( ) {
+                const socials = document.getElementsByTagName("template")[6]
+                const socials1 = socials.content.textContent
+                this.echo(socials1)
             },
         }, {
             greetings: greetings.innerHTML,
